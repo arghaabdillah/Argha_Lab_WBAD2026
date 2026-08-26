@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        text-align: center;
+        margin-top: 40px;
+        color: #1f2937;
+      }
+      h1 {
+        color: #2563eb;
+      }
+      .kartu {
+        border: 1px solid #cbd5e1;
+        border-radius: 10px;
+        padding: 20px;
+        max-width: 320px;
+        margin: 20px auto;
+      }
+      button {
+        margin-top: 10px;
+        padding: 8px 14px;
+        border: none;
+        border-radius: 6px;
+        background: #2563eb;
+        color: white;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #1d4ed8;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="judul">Halo, Dunia!</h1>
+    <div class="kartu">
+      <h2 id="judul-kartu">Judul Awal</h2>
+      <p class="deskripsi">Konten ini akan berubah saat tombol diklik.</p>
+      <button id="btn-ubah" type="button">Ubah Konten</button>
+    </div>
+
+    <script>
+      const btn = document.getElementById("btn-ubah");
+      const judul = document.querySelector("#judul-kartu");
+      const deskripsi = document.querySelector(".deskripsi");
+      btn.addEventListener("click", () => {
+        judul.textContent = "Judul Sudah Diubah!";
+        deskripsi.textContent =
+          "Konten ini diganti oleh JavaScript saat tombol diklik.";
+      });
+    </script>
+  </body>
+</html>
