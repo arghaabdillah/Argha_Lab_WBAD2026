@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 4.1</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f0fdf4;
+        padding: 32px;
+      }
+      .card {
+        max-width: 700px;
+        margin: auto;
+        background: white;
+        border-radius: 12px;
+        padding: 24px;
+        box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>Soal 4.1 - Array dan perulangan</h2>
+      <script>
+        const angka = [10, 20, 30, 40, 50];
+        let total = 0;
+
+        for (let i = 0; i < angka.length; i++) {
+          total += angka[i];
+        }
+
+        document.write('<p>Data angka: ' + angka.join(', ') + '</p>');
+        document.write('<p>Jumlah total: ' + total + '</p>');
+        document.write('<p>Rata-rata: ' + (total / angka.length) + '</p>');
+      </script>
+    </div>
+  </body>
+</html>

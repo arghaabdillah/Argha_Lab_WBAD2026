@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 2.3</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f8fafc;
+        margin: 0;
+        padding: 32px;
+      }
+      .card {
+        max-width: 700px;
+        margin: auto;
+        background: #fff;
+        border-radius: 12px;
+        padding: 24px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      }
+      pre {
+        background: #111827;
+        color: #e5e7eb;
+        padding: 16px;
+        border-radius: 8px;
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>Soal 2.3 - Operasi aritmatika dan diskon</h2>
+      <pre><code>const harga = 150000;
+const diskonPersen = 20;
+const potongan = harga * (diskonPersen / 100);
+const hargaAkhir = harga - potongan;
+console.log(`Harga awal: Rp${harga}`);
+console.log(`Diskon: ${diskonPersen}% = Rp${potongan}`);
+console.log(`Harga akhir: Rp${hargaAkhir}`);</code></pre>
+
+      <script>
+        const harga = 150000;
+        const diskonPersen = 20;
+        const potongan = harga * (diskonPersen / 100);
+        const hargaAkhir = harga - potongan;
+
+        console.log(`Harga awal: Rp${harga}`);
+        console.log(`Diskon: ${diskonPersen}% = Rp${potongan}`);
+        console.log(`Harga akhir: Rp${hargaAkhir}`);
+      </script>
+    </div>
+  </body>
+</html>

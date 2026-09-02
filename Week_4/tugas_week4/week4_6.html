@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 5.2</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #fff7ed;
+        padding: 32px;
+      }
+      .card {
+        max-width: 700px;
+        margin: auto;
+        background: white;
+        border-radius: 12px;
+        padding: 24px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>Soal 5.2 - Object</h2>
+      <script>
+        const mahasiswa = {
+          nama: 'Argha',
+          nim: '20230001',
+          jurusan: 'Teknik Informatika',
+          semester: 3,
+          tampilkan: function () {
+            return `${this.nama} (${this.nim}) - ${this.jurusan} - Semester ${this.semester}`;
+          }
+        };
+
+        console.log(mahasiswa);
+        console.log(mahasiswa.nama);
+        console.log(mahasiswa.tampilkan());
+
+        document.write('<p>Nama: ' + mahasiswa.nama + '</p>');
+        document.write('<p>NIM: ' + mahasiswa.nim + '</p>');
+        document.write('<p>Jurusan: ' + mahasiswa.jurusan + '</p>');
+        document.write('<p>' + mahasiswa.tampilkan() + '</p>');
+      </script>
+    </div>
+  </body>
+</html>

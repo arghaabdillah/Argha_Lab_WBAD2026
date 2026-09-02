@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 3.1</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f8fafc;
+        margin: 0;
+        padding: 32px;
+      }
+      .card {
+        max-width: 700px;
+        margin: auto;
+        background: #fff;
+        border-radius: 12px;
+        padding: 24px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      }
+      input, button {
+        padding: 10px 12px;
+        margin: 8px 0;
+        border-radius: 8px;
+        border: 1px solid #cbd5e1;
+      }
+      button {
+        background: #2563eb;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>Soal 3.1 - Input pengguna dan DOM</h2>
+      <label for="nama">Masukkan nama:</label><br />
+      <input type="text" id="nama" placeholder="Contoh: Argha" />
+      <button onclick="tampilkanNama()">Tampilkan</button>
+      <p id="hasilNama"></p>
+
+      <script>
+        function tampilkanNama() {
+          const nama = document.getElementById('nama').value || 'Pengguna';
+          document.getElementById('hasilNama').textContent = `Halo, ${nama}!`;
+        }
+      </script>
+    </div>
+  </body>
+</html>

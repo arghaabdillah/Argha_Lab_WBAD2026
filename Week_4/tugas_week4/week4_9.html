@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 8.1</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #fdf2f8;
+        padding: 32px;
+      }
+      .card {
+        max-width: 700px;
+        margin: auto;
+        background: white;
+        border-radius: 12px;
+        padding: 24px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      }
+      input, button {
+        padding: 10px 12px;
+        margin-top: 8px;
+        border-radius: 8px;
+        border: 1px solid #d1d5db;
+      }
+      button {
+        background: #ec4899;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      #pesan {
+        margin-top: 12px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>Soal 8.1 - Validasi form sederhana</h2>
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" placeholder="contoh@email.com" />
+      <button onclick="validasiForm()">Validasi</button>
+      <p id="pesan"></p>
+
+      <script>
+        function validasiForm() {
+          const email = document.getElementById('email').value.trim();
+          const pesan = document.getElementById('pesan');
+
+          if (email === '') {
+            pesan.textContent = 'Email tidak boleh kosong!';
+            pesan.style.color = 'red';
+          } else if (email.includes('@')) {
+            pesan.textContent = `Email valid: ${email}`;
+            pesan.style.color = 'green';
+          } else {
+            pesan.textContent = 'Format email tidak valid!';
+            pesan.style.color = 'red';
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>
